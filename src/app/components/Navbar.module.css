@@ -1,0 +1,53 @@
+.navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+  }
+  
+  .menuButton {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    display: none;
+  }
+  
+  .open {
+    display: block;
+  }
+  
+  @media (max-width: 1019px) {
+    .menu {
+      display: none;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      top: 68px; /* Adjust based on your design */
+      left: 0;
+    }
+  
+    .menu li {
+      margin: 0.5rem 0;
+    }
+  
+    .open {
+      display: block;
+    }
+  }
+  
