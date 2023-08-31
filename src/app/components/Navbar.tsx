@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import styles from "./Navbar.module.css"; // You can use CSS modules for styling
+import { CiMenuBurger } from "react-icons/ci";
+import { TfiClose } from "react-icons/tfi";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,25 +18,32 @@ const Navbar = () => {
       <div className={styles.logo}>
         <Link href="/">Logo</Link>
       </div>
-      <button
-        className={`${styles.menuButton + " lg:hidden"}`}
-        onClick={toggleMenu}
-      >
-        {isOpen ? "open" : "closed"}
+      <button className={`${styles.menuButton}`} onClick={toggleMenu}>
+        {isOpen ? (
+          <span className="text-2xl">
+            <TfiClose />
+          </span>
+        ) : (
+          <span className="text-3xl">
+            <CiMenuBurger />
+          </span>
+        )}
       </button>
       {/* mobile menu */}
-      <ul
-        className={`${styles.menu + " lg:hidden bg-slate-600 h-screen"} ${isOpen ? styles.open : ""}`}
-      >
-        <li className="w-fit">
-          <Link href="/about" onClick={() => setIsOpen(!isOpen)}>About</Link>
+      <ul className={`${styles.mobileMenu} ${isOpen ? styles.open : ""}`}>
+        <li>
+          <Link href="/about" onClick={() => setIsOpen(!isOpen)}>
+            About
+          </Link>
         </li>
-        <li className="w-fit">
-          <Link href="/contact" onClick={() => setIsOpen(!isOpen)}>Contact</Link>
+        <li>
+          <Link href="/contact" onClick={() => setIsOpen(!isOpen)}>
+            Contact
+          </Link>
         </li>
       </ul>
       {/* tablet and widescreen */}
-      <ul className="hidden lg:flex space-x-2">
+      <ul className={styles.nonMobileMenu}>
         <li>
           <Link href="/about">About</Link>
         </li>
