@@ -1,9 +1,10 @@
+import Image from "next/image";
+
 export default function Webdevelopment() {
   return (
-    <div className="flex flex-col h-full">
+    <div className="flex h-full flex-col">
       <div>
-        <h1 className="text-4xl">Webdevelopment</h1>
-        <h2 className="text-lg italic">We design and develop your website!</h2>
+        <h1 className="text-4xl">Webentwicklung</h1>
       </div>
       <div>
         <p>
@@ -14,7 +15,15 @@ export default function Webdevelopment() {
         </p>
       </div>
       <div>
-        <div className="bg-white h-56">image</div>
+        <div className="flex items-center justify-center pt-10">
+          <Image
+            src="/images/sectorlink-com-webdevelopment.jpg"
+            alt="webdev technology"
+            width={700}
+            height={700}
+            className="rounded-xl"
+          />
+        </div>
       </div>
     </div>
   );
