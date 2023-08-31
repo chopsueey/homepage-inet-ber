@@ -1,0 +1,20 @@
+/* mobile menu */
+
+@keyframes mobileMenuOpen {
+  0% {
+    right: -100%;
+  }
+
+  100% {
+    right: 0;
+  }
+}
+
+.mobileMenu {
+  animation-name: mobileMenuOpen;
+  animation-duration: 200ms;
+}
+
+.mobileMenu li {
+  margin-inline: 1px;
+}
