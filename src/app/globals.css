@@ -2,10 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* #f14251 */
+
 :root {
   --text-color: black;
-  /* #f14251 */
-  --text-color-dark: white ; 
+  --text-color-dark: white; 
   --bg-color: white;
   --bg-color-dark: black;
 }
@@ -18,4 +19,12 @@ body {
 .dark body {
   color: var(--text-color-dark);
   background-color: var(--bg-color-dark);
+}
+
+.slick-dots li button::before {
+  color: red !important;
+}
+
+.slick-arrow::before {
+  color: blue !important;
 }
