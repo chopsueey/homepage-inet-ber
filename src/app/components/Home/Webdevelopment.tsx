@@ -1,10 +1,10 @@
-import Image from "next/image";
+import FCarousel from "../flowbite-react/FCarousel";
 
 export default function Webdevelopment() {
   return (
     <div className="flex h-full flex-col">
       <div>
-        <h1 className="text-4xl">Webentwicklung</h1>
+        <h1 className="text-center text-4xl">Webentwicklung</h1>
       </div>
       <div>
         <p>
@@ -15,7 +15,7 @@ export default function Webdevelopment() {
         </p>
       </div>
       <div>
-        <div className="flex items-center justify-center pt-10">
+        {/* <div className="flex items-center justify-center pt-10">
           <Image
             src="/images/sectorlink-com-webdevelopment.jpg"
             alt="webdev technology"
@@ -23,7 +23,27 @@ export default function Webdevelopment() {
             height={700}
             className="rounded-xl"
           />
-        </div>
+        </div> */}
+        {/* <div className="flex items-center justify-center">
+          <SimpleSlider />
+        </div> */}
+      </div>
+      <div>
+          <FCarousel/>
+          {/* <Image
+            src="/images/sectorlink-com-webdevelopment.jpg"
+            alt="webdev technology"
+            width={700}
+            height={700}
+            className="rounded-xl"
+          />
+           <Image
+            src="/images/sectorlink-com-webdevelopment.jpg"
+            alt="webdev technology"
+            width={700}
+            height={700}
+            className="rounded-xl"
+          /> */}
       </div>
     </div>
   );
