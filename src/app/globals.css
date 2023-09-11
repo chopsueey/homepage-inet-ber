@@ -20,11 +20,3 @@ body {
   color: var(--text-color-dark);
   background-color: var(--bg-color-dark);
 }
-
-.slick-dots li button::before {
-  color: red !important;
-}
-
-.slick-arrow::before {
-  color: blue !important;
-}

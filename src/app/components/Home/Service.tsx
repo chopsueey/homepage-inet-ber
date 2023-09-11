@@ -1,10 +1,10 @@
 import CarouselFb from "../flowbite-react/CarouselFb";
 import FeaturesFb from "../flowbite-react/FeaturesFb";
 
-export default function Webdevelopment() {
+export default function Service() {
   return (
     <div className="flex flex-col">
-      <div>
+      {/* <div>
         <h1 className="text-center text-4xl">Webentwicklung</h1>
       </div>
       <div>
@@ -14,7 +14,8 @@ export default function Webdevelopment() {
           reiciendis distinctio obcaecati consequatur sint ea natus, ipsa dicta?
           Quam, quaerat amet.
         </p>
-      </div>
+      </div> */}
+      <FeaturesFb />
     </div>
   );
 }
