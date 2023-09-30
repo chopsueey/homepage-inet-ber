@@ -33,14 +33,14 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className="fixed z-10 w-full shadow-md backdrop-blur-sm dark:shadow-gray-700">
+    <header className="fixed z-10 w-full shadow-md backdrop-blur-sm dark:shadow-gray-400/50">
       <nav className="mx-auto flex h-[66px] w-full max-w-screen-2xl items-center justify-between p-2 px-6 lg:px-14">
         <div className="flex space-x-10">
           <Link href="/" className="text-2xl">
             Inet Beringer
           </Link>
           {/* tablet and widescreen */}
-          <ul className="hidden items-center space-x-4 text-sm lg:flex text-gray-400">
+          <ul className="hidden items-center space-x-4 text-sm lg:flex text-gray-600 dark:text-gray-400">
             <li className="hover:text-black dark:hover:text-white">
               <Link href="/about">Webentwicklung</Link>
             </li>
@@ -63,15 +63,15 @@ const Navbar = () => {
         </div>
         <div className="hidden lg:block">
           <button
-            className="w-fit rounded-full border border-gray-500 p-1 hover:bg-slate-200 dark:hover:bg-gray-900"
+            className="w-fit rounded-full border border-gray-400 dark:border-gray-400/50 p-1 hover:bg-gray-400/50 dark:hover:bg-[#101010]"
             onClick={toggleDarkMode}
           >
             {darkMode ? (
-              <span className="text-xl text-yellow-300 hover:text-yellow-200">
+              <span className="text-xl text-yellow-200 hover:text-yellow-300">
                 <MdOutlineLightMode />
               </span>
             ) : (
-              <span className="text-xl">
+              <span className="text-xl hover:text-blue-800">
                 <MdModeNight />
               </span>
             )}

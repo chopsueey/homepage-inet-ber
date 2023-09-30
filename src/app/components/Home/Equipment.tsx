@@ -1,9 +1,9 @@
 import GalleryTagFb from "../flowbite-react/GalleryTagFb";
 
-export default function StreamingEquipment() {
+export default function Equipment() {
   return (
     <>
-      <h1 className="text-2xl">StreamingEquipment</h1>
+      <h1 className="text-2xl">Equipment</h1>
       <GalleryTagFb />
     </>
   )
