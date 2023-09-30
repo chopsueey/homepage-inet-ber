@@ -84,7 +84,7 @@ export default function FooterFb() {
             </div>
           </div>
         </div>
-        <hr className="my-6 border-gray-200 dark:border-gray-700 sm:mx-auto lg:my-8" />
+        <hr className="my-6 border-gray-200 dark:border-gray-400/50 sm:mx-auto lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 dark:text-gray-400 sm:text-center">
             © 2023{" "}
@@ -96,21 +96,21 @@ export default function FooterFb() {
           <div className="mt-4 flex space-x-5 sm:mt-0 sm:justify-center">
             <a
               href="#"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              className="text-gray-500 hover:text-[#0866fb] dark:hover:text-[#0866fb]"
             >
               <BsFacebook/>
               <span className="sr-only">Facebook page</span>
             </a>
             <a
               href="#"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              className="text-gray-500 hover:text-[#5865f2] dark:hover:text-[#5865f2]"
             >
               <BsDiscord/>
               <span className="sr-only">Discord community</span>
             </a>
             <a
               href="#"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              className="text-gray-500 hover:text-[#1e9bf0] dark:hover:text-[#1e9bf0]"
             >
               <BsTwitter />
               <span className="sr-only">Twitter page</span>
