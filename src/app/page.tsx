@@ -16,7 +16,7 @@ export default function Home() {
         <h1 className="mb-16 mt-2 text-5xl font-extrabold lg:text-8xl">
           Wir machen es.
         </h1>
-        <p className="max-w-3xl text-xl text-gray-500">
+        <p className="max-w-3xl text-xl text-gray-600 dark:text-gray-400">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
           adipisci molestias, aut est voluptas voluptates? Maiores enim iusto
           numquam aliquam!
