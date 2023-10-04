@@ -85,7 +85,7 @@ export default function FeaturesFb() {
               
             </div> */}
                 <h3 className="mb-2 text-xl font-bold dark:text-white">
-                  Streaming Equipment
+                  Gaming- und Streamingequipment
                 </h3>
                 <p className="text-gray-500 dark:text-gray-400">
                   Audit-proof software built for critical financial operations
@@ -102,7 +102,7 @@ export default function FeaturesFb() {
               
             </div> */}
                 <h3 className="mb-2 text-xl font-bold dark:text-white">
-                  Gaming Hardware
+                  Community
                 </h3>
                 <p className="text-gray-500 dark:text-gray-400">
                   Craft beautiful, delightful experiences for both marketing and
