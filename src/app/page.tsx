@@ -22,6 +22,8 @@ export default function Home() {
           numquam aliquam!
         </p>
       </section>
+      <section className="absolute w-full left-0 border-b-[1px] border-gray-300 p-4 dark:border-gray-400/50">
+      </section>
       <section className="border-b-[1px] border-gray-300 p-4 dark:border-gray-400/50">
         <Service />
       </section>

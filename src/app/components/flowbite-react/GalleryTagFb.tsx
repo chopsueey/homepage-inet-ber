@@ -2,9 +2,6 @@
 
 import Image from "next/image";
 import React, { ReactNode, useState } from "react";
-import img1 from "../../../../public/images/gaming-setup-1-bing-ai.jpg";
-import img2 from "../../../../public/images/gaming-setup-2-bing-ai.jpg";
-import img3 from "../../../../public/images/gaming-setup-3-bing-ai.jpg";
 
 import imageList from "./imageList";
 
