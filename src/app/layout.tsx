@@ -4,6 +4,7 @@ import { Inter, Montserrat } from "next/font/google";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import FooterFb from "./components/flowbite-react/FooterFb";
+import { GeneralContext } from "./context/GeneralContext";
 
 // const inter = Inter({ subsets: ["latin"], weight: "400" });
 
@@ -34,12 +35,14 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body>
-        <Navbar />
-        {children}
-        {/* <Footer /> */}
-        <FooterFb />
-      </body>
+      <GeneralContext>
+        <body>
+          <Navbar />
+          {children}
+          {/* <Footer /> */}
+          <FooterFb />
+        </body>
+      </GeneralContext>
     </html>
   );
 }

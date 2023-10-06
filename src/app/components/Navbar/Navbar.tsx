@@ -7,10 +7,12 @@ import { RiMenu4Line } from "react-icons/ri";
 import { VscChromeClose } from "react-icons/vsc";
 import { MdModeNight } from "react-icons/md";
 import { MdOutlineLightMode } from "react-icons/md";
+import GeneralStore from "@/app/context/GeneralContext";
 
 const Navbar = () => {
+  const [darkMode, setDarkMode] = GeneralStore();
   const [isOpen, setIsOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
+  // const [darkMode, setDarkMode] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -129,20 +131,20 @@ const Navbar = () => {
             </li>
           </div>
           <div>
-          <button
-            className="w-fit rounded-full p-2 hover:bg-gray-300 dark:hover:bg-gray-600/50"
-            onClick={toggleDarkMode}
-          >
-            {darkMode ? (
-              <span className="text-xl text-white dark:text-white/90 hover:dark:text-white">
-                <MdOutlineLightMode />
-              </span>
-            ) : (
-              <span className="text-xl text-gray-700 hover:text-black">
-                <MdModeNight />
-              </span>
-            )}
-          </button>
+            <button
+              className="w-fit rounded-full p-2 hover:bg-gray-300 dark:hover:bg-gray-600/50"
+              onClick={toggleDarkMode}
+            >
+              {darkMode ? (
+                <span className="text-xl text-white dark:text-white/90 hover:dark:text-white">
+                  <MdOutlineLightMode />
+                </span>
+              ) : (
+                <span className="text-xl text-gray-700 hover:text-black">
+                  <MdModeNight />
+                </span>
+              )}
+            </button>
           </div>
           {/* <button
             className="w-fit rounded-full border border-gray-500 p-1 hover:bg-slate-200 dark:hover:bg-gray-900"

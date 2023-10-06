@@ -9,7 +9,7 @@ import Equipment from "./components/Home/Equipment";
 export default function Home() {
   return (
     <main className="container mx-auto max-w-screen-xl">
-      <section className="border-b-[1px] border-gray-300 flex flex-col items-center p-4 py-20 text-center dark:border-gray-400/50 lg:py-44">
+      <section className="flex flex-col items-center border-gray-300 p-4 py-20 text-center dark:border-gray-400/50 lg:py-44">
         <p className="text-md p-10 text-gray-600 dark:text-gray-400">
           Webentwicklung. Gameserver. Custom&nbsp;Bots.
         </p>
@@ -22,25 +22,28 @@ export default function Home() {
           numquam aliquam!
         </p>
       </section>
-      <section className="absolute w-full left-0 border-b-[1px] border-gray-300 p-4 dark:border-gray-400/50">
-      </section>
-      <section className="border-b-[1px] border-gray-300 p-4 dark:border-gray-400/50">
+
+      <section>
         <Service />
       </section>
-      <section className="border-b-[1px] border-gray-300 min-h-screen p-4 dark:border-gray-400/50">
+      <section className="absolute left-0 w-full border-b-[1px] border-gray-300 p-4 dark:border-gray-400/50"></section>
+      <section className="p-4 mt-10">
         <Webdevelopment />
       </section>
-      <section className="border-b-[1px] border-gray-300 min-h-screen p-4 dark:border-gray-400/50">
+      <section className="p-4 my-10">
         <ServerDeploy />
       </section>
-      <section className="border-b-[1px] border-gray-300 min-h-screen p-4 dark:border-gray-400/50">
-        <DiscordCommunity />
-      </section>
-      <section className="border-b-[1px] border-gray-300 min-h-screen p-4 dark:border-gray-400/50">
+      <section className="absolute left-0 w-full border-b-[1px] border-gray-300 p-4 dark:border-gray-400/50"></section>
+      <section className="min-h-screen p-4">
         <CustomBots />
       </section>
+      <section className="absolute left-0 w-full border-b-[1px] border-gray-300 p-4 dark:border-gray-400/50"></section>
       <section className="min-h-screen p-4">
         <Equipment />
+      </section>
+      <section className="absolute left-0 w-full border-b-[1px] border-gray-300 p-4 dark:border-gray-400/50"></section>
+      <section className="min-h-screen p-4">
+        <DiscordCommunity />
       </section>
       {/* <section className="min-h-screen p-4">
         <GamingHardware />
