@@ -36,7 +36,7 @@ export default function RootLayout({
         />
       </head>
       <GeneralContext>
-        <body>
+        <body className="overflow-x-hidden">
           <Navbar />
           {children}
           {/* <Footer /> */}

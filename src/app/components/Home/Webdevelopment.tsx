@@ -22,7 +22,7 @@ export default function Webdevelopment() {
 
   return (
     <>
-      <div className="flex flex-col px-5 py-10 sm:px-20 lg:flex-row lg:justify-between lg:px-28">
+      <div className="flex flex-col overflow-x-hidden px-5 py-10 sm:px-20 lg:flex-row lg:justify-between lg:px-28">
         <div
           className="mb-6 mt-8 flex flex-col items-end justify-start"
           data-aos="fade-right"
@@ -54,7 +54,7 @@ export default function Webdevelopment() {
         </div>
       </div>
       <div
-        className="px-5 sm:px-20 lg:px-40 text-gray-600 dark:text-gray-400"
+        className="px-5 text-gray-600 dark:text-gray-400 sm:px-20 lg:px-40"
         data-aos="fade-up"
         data-aos-delay="200"
       >
