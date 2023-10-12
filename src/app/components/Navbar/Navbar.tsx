@@ -34,6 +34,7 @@ const Navbar = () => {
     if (!localStorage.theme) {
       localStorage.setItem("theme", "dark");
       setDarkMode(true);
+      document.documentElement.classList.add("dark");
     }
   }, [darkMode]);
 
