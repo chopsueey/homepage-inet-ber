@@ -20,7 +20,7 @@ type ChildrenType = {
 }
 
 export function GeneralContext({ children }: ChildrenType): ReactElement {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   const sharedData: SharedData = [darkMode, setDarkMode];
 

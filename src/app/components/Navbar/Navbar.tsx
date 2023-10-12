@@ -35,7 +35,7 @@ const Navbar = () => {
       localStorage.setItem("theme", "dark");
       setDarkMode(true);
     }
-  }, []);
+  }, [darkMode]);
 
   return (
     <header className="fixed z-10 w-full shadow-md backdrop-blur-sm dark:shadow-gray-400/50">
