@@ -22,28 +22,27 @@ export default function Webdevelopment() {
 
   return (
     <>
-      <div className="flex flex-col overflow-x-hidden px-5 py-10 sm:px-20 lg:flex-row lg:justify-between lg:px-28">
+      <div className="flex flex-col justify-center items-center overflow-x-hidden px-5 py-10 sm:px-20 lg:flex-row lg:justify-between lg:px-28">
         <div
-          className="mb-6 mt-8 flex flex-col items-end justify-start"
-          data-aos="fade-right"
-          data-aos-delay="200"
+          className="mb-6 mt-8 flex flex-col lg:items-end justify-start"
+          
         >
           <h1
             className="text-center text-4xl font-bold"
             data-aos="fade-right"
-            data-aos-delay="200"
+            data-aos-delay="100"
           >
             Eigene Website?
           </h1>
           <h1
             className="relative text-center text-4xl font-bold lg:left-16"
             data-aos="fade-left"
-            data-aos-delay="200"
+            data-aos-delay="1000"
           >
             Wir helfen dir.
           </h1>
         </div>
-        <div className="w-fit" data-aos="fade-left" data-aos-delay="200">
+        <div className="w-fit" data-aos="fade-left" data-aos-delay="100">
           <Image
             className="h-auto max-w-full rounded-xl"
             src={darkMode ? img1 : img2}
@@ -54,9 +53,9 @@ export default function Webdevelopment() {
         </div>
       </div>
       <div
-        className="px-5 text-gray-600 dark:text-gray-400 sm:px-20 lg:px-40"
+        className="px-5 text-gray-600 dark:text-gray-400 sm:px-20 lg:px-40 text-center"
         data-aos="fade-up"
-        data-aos-delay="200"
+        data-aos-delay="100"
       >
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt

@@ -7,6 +7,7 @@ import {
   BsDiscord,
   BsFacebook
 } from "react-icons/bs";
+import {FaXTwitter} from "react-icons/fa6";
 
 export default function FooterFb() {
   return (
@@ -16,7 +17,7 @@ export default function FooterFb() {
           <div className="mb-6 md:mb-0">
             <a href="#" className="flex items-center">
               {/* <img src="https://flowbite.com/docs/images/logo.svg" className="h-8 mr-3" alt="FlowBite Logo" /> */}
-              <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
+              <span className="self-center whitespace-nowrap text-2xl dark:text-white">
                 Inet Beringer
               </span>
             </a>
@@ -110,9 +111,9 @@ export default function FooterFb() {
             </a>
             <a
               href="#"
-              className="text-gray-500 hover:text-[#1e9bf0] dark:hover:text-[#1e9bf0]"
+              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
-              <BsTwitter />
+              <FaXTwitter />
               <span className="sr-only">Twitter page</span>
             </a>
             <a

@@ -50,22 +50,22 @@ const Navbar = () => {
           {/* tablet and widescreen */}
           <ul className="hidden items-center space-x-4 text-sm text-gray-600 dark:text-gray-400 lg:flex">
             <li className="hover:text-black dark:hover:text-white">
-              <Link href="/about">Webentwicklung</Link>
+              <Link href="#Webdev">Webentwicklung</Link>
             </li>
-            <li className="hover:text-black dark:hover:text-white">
+            {/* <li className="hover:text-black dark:hover:text-white">
               <Link href="/contact">Server</Link>
+            </li> */}
+            <li className="hover:text-black dark:hover:text-white">
+              <Link href="#CustomBots">Custom Bots</Link>
             </li>
             <li className="hover:text-black dark:hover:text-white">
-              <Link href="/contact">Bots</Link>
+              <Link href="#Equipment">Equipment</Link>
             </li>
             <li className="hover:text-black dark:hover:text-white">
-              <Link href="/contact">Gaming</Link>
+              <Link href="#Community">Community</Link>
             </li>
             <li className="hover:text-black dark:hover:text-white">
-              <Link href="/contact">Community</Link>
-            </li>
-            <li className="hover:text-black dark:hover:text-white">
-              <Link href="/contact">Über uns</Link>
+              <Link href="#">Über uns</Link>
             </li>
           </ul>
         </div>
@@ -106,39 +106,39 @@ const Navbar = () => {
         >
           <div className="w-fit space-y-6">
             <li className="hover:text-black dark:hover:text-white">
-              <Link href="/about" onClick={() => setIsOpen(!isOpen)}>
+              <Link href="#Webdev" onClick={() => setIsOpen(!isOpen)}>
                 Webentwicklung
               </Link>
             </li>
-            <li className="hover:text-black dark:hover:text-white">
+            {/* <li className="hover:text-black dark:hover:text-white">
               <Link href="/contact" onClick={() => setIsOpen(!isOpen)}>
                 Server
               </Link>
-            </li>
+            </li> */}
             <li className="hover:text-black dark:hover:text-white">
-              <Link href="/contact" onClick={() => setIsOpen(!isOpen)}>
-                Bots
+              <Link href="#CustomBots" onClick={() => setIsOpen(!isOpen)}>
+                Custom Bots
               </Link>
             </li>
             <li className="hover:text-black dark:hover:text-white">
-              <Link href="/contact" onClick={() => setIsOpen(!isOpen)}>
-                Gaming
+              <Link href="#Equipment" onClick={() => setIsOpen(!isOpen)}>
+                Equipment
               </Link>
             </li>
             <li className="hover:text-black dark:hover:text-white">
-              <Link href="/contact" onClick={() => setIsOpen(!isOpen)}>
+              <Link href="#Community" onClick={() => setIsOpen(!isOpen)}>
                 Community
               </Link>
             </li>
             <li className="hover:text-black dark:hover:text-white">
-              <Link href="/contact" onClick={() => setIsOpen(!isOpen)}>
+              <Link href="#" onClick={() => setIsOpen(!isOpen)}>
                 Über uns
               </Link>
             </li>
           </div>
           <div>
             <button
-              className="w-fit rounded-full p-2 hover:bg-gray-300 dark:hover:bg-gray-600/50"
+              className="w-fit rounded-full p-2 hover:bg-gray-300 dark:hover:bg-gray-600/50 relative bottom-1.5"
               onClick={toggleDarkMode}
             >
               {darkMode ? (
