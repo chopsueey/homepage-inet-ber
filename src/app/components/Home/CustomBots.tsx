@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-import Robot from "../../animation/robot";
+import Robot from "../../animation/Robot.js";
 
 export default function CustomBots() {
   useEffect(() => {
