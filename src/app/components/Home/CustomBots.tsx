@@ -16,9 +16,9 @@ export default function CustomBots() {
   }, []);
 
   return (
-    <div className="mx-auto mb-6 mt-24 flex max-w-screen-lg flex-col items-center justify-center">
+    <div className="mx-auto mb-6 mt-24 flex max-w-screen-lg flex-col items-center justify-center overflow-hidden">
       <div>
-        <h1 className="px-4 text-center text-4xl font-bold">
+        <h1 style={{wordBreak: "break-word"}} className="px-4 text-center text-4xl font-bold">
           Wir programmieren dir maßgeschneiderte Bots.
         </h1>
       </div>
