@@ -11,7 +11,7 @@ import {FaXTwitter} from "react-icons/fa6";
 
 export default function FooterFb() {
   return (
-    <footer className="container mx-auto max-w-screen-xl">
+    <footer className="max-w-screen-2xl container mx-auto">
       <div className="mx-auto w-full p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">

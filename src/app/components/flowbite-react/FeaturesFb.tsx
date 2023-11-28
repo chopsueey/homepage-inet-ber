@@ -1,7 +1,7 @@
 import Link from "next/link";
 export default function FeaturesFb() {
   return (
-    <section className="bg-white dark:bg-black">
+    <section>
       <div className="mx-auto max-w-screen-xl px-4 pb-8 sm:pb-16 lg:px-6">
         {/* <div className="my-10 flex justify-center lg:mb-16">
           <h2 className="text-center text-4xl tracking-tight text-gray-900 dark:text-white font-bold">

@@ -19,7 +19,7 @@ export default function GalleryTagFb() {
   }, []);
 
   return (
-    <div className="mx-auto flex max-w-screen-lg flex-col items-center justify-center overflow-hidden">
+    <div className="flex flex-col items-center justify-center overflow-hidden">
       <div className="mb-6 mt-24">
         <h1 className="text-center text-4xl font-bold">
           Starte durch, mit unserem Equipment.
@@ -90,8 +90,8 @@ export default function GalleryTagFb() {
                   className="h-auto max-w-full rounded-lg"
                   src={image.src}
                   alt={image.alt}
-                  width={1000}
-                  height={1000}
+                  width={400}
+                  height={400}
                 />
               </div>
             );

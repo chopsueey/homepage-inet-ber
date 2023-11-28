@@ -21,7 +21,7 @@ export default function ServerDeploy() {
   }, []);
 
   return (
-    <>
+    <section className="container mx-auto max-w-screen-2xl p-4">
       <div className="flex flex-col items-center overflow-x-hidden px-5 py-10 sm:px-20 lg:flex-row lg:justify-between lg:px-28">
         <div className="w-fit" data-aos="fade-left" data-aos-delay="100">
           <Image
@@ -32,10 +32,7 @@ export default function ServerDeploy() {
             height={400}
           />
         </div>
-        <div
-          className="mb-6 mt-8 flex flex-col justify-start"
-          
-        >
+        <div className="mb-6 mt-8 flex flex-col justify-start">
           <h1
             className="text-center text-4xl font-bold"
             data-aos="fade-right"
@@ -53,7 +50,7 @@ export default function ServerDeploy() {
         </div>
       </div>
       <div
-        className="px-5 text-gray-600 dark:text-gray-400 sm:px-20 lg:px-40 text-center"
+        className="px-5 text-center text-gray-600 dark:text-gray-400 sm:px-20 lg:px-40"
         data-aos="fade-up"
         data-aos-delay="200"
       >
@@ -70,6 +67,6 @@ export default function ServerDeploy() {
           error magni.
         </p>
       </div>
-    </>
+    </section>
   );
 }

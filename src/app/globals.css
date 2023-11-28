@@ -3,12 +3,13 @@
 @tailwind utilities;
 
 /* #f14251 */
-
+/* #1d1d20 */
+/* #1a1a1a */
 :root {
-  --text-color: black;
+  --text-color: #1d1d20;
   --text-color-dark: white; 
   --bg-color: white;
-  --bg-color-dark: black;
+  --bg-color-dark: #1d1d20;
 }
 
 body {
@@ -19,4 +20,30 @@ body {
 .dark body {
   color: var(--text-color-dark);
   background-color: var(--bg-color-dark);
+}
+
+.link-effect::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #00319b;
+  bottom: 1px;
+  right: 0;
+  transition: width 150ms linear;
+}
+
+.link-effect::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  background-color: #00319b;
+  bottom: 0;
+  left: 0;
+  transition: width 150ms linear;
+}
+
+.link-effect:hover::before {
+  width: 100%;
 }
