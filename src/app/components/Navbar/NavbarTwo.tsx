@@ -59,7 +59,6 @@ const NavbarTwo = () => {
           translateX: "-100vw",
           transition: {
             duration: 0.7,
-            ease: "easeInOut",
             type: "spring",
           },
         }}
