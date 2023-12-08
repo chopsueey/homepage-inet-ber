@@ -12,17 +12,9 @@ import GeneralStore from "@/app/context/GeneralContext";
 export default function Webdevelopment() {
   const [darkMode, setDarkMode] = GeneralStore();
 
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: false,
-      mirror: false,
-    });
-  }, []);
-
   return (
     <section className="container mx-auto max-w-screen-2xl p-4">
-      <div className="flex flex-col items-center justify-center overflow-x-hidden px-5 py-10 sm:px-20 lg:flex-row lg:justify-between lg:px-28">
+      <div className="flex flex-col items-center overflow-x-hidden px-4 py-10 lg:flex-row lg:justify-between lg:px-32">
         <div className="mb-6 mt-8 flex flex-col justify-start lg:items-end">
           <h1
             className="text-center text-4xl font-bold"
@@ -32,9 +24,9 @@ export default function Webdevelopment() {
             Eigene Website?
           </h1>
           <h1
-            className="relative text-center text-4xl font-bold lg:left-16"
+            className="relative text-center text-4xl font-bold xl:left-16"
             data-aos="fade-left"
-            data-aos-delay="1000"
+            data-aos-delay="500"
           >
             Wir helfen dir.
           </h1>
@@ -50,7 +42,7 @@ export default function Webdevelopment() {
         </div>
       </div>
       <div
-        className="px-5 text-center text-gray-600 dark:text-gray-400 sm:px-20 lg:px-40"
+        className="px-5 text-center text-gray-600 dark:text-gray-400 prose mx-auto"
         data-aos="fade-up"
         data-aos-delay="100"
       >

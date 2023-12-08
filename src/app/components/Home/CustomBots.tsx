@@ -1,23 +1,14 @@
 "use client";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 import Robot from "../../animation/Robot.js";
 
 export default function CustomBots() {
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: false,
-      mirror: false,
-    });
-  }, []);
 
   return (
     <section className="max-w-screen-2xl container mx-auto p-4">
-      <div className="mx-auto mb-6 mt-24 flex max-w-screen-lg flex-col items-center justify-center overflow-hidden">
+      <div className="mx-auto mb-6 mt-8 flex max-w-screen-lg flex-col items-center justify-center overflow-hidden">
         <div>
           <h1
             style={{ wordBreak: "break-word" }}
@@ -29,11 +20,10 @@ export default function CustomBots() {
         <div
           className="py-20"
           data-aos="zoom-in"
-          data-aos-delay="400"
           data-aos-anchor-placement="top-bottom"
         >
           <h1 className="pb-4 text-center text-3xl font-bold italic text-gray-600 dark:text-gray-400">
-            &laquo; Beep Boop. &raquo;
+          &raquo; Beep Boop &laquo;
           </h1>
           <div className="flex justify-center">
             <Robot />

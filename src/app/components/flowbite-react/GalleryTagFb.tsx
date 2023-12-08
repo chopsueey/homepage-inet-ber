@@ -4,31 +4,21 @@ import Image from "next/image";
 import React, { ReactNode, useState, useEffect } from "react";
 
 import imageList from "./imageList";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 export default function GalleryTagFb() {
   const [category, setCategory] = useState("all");
 
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: false,
-      mirror: false,
-    });
-  }, []);
-
   return (
     <div className="flex flex-col items-center justify-center overflow-hidden">
-      <div className="mb-6 mt-24">
+      <div>
         <h1 className="text-center text-4xl font-bold">
           Starte durch, mit unserem Equipment.
         </h1>
-        <p className="p-5 text-center text-gray-600 dark:text-gray-400 sm:px-20 lg:px-40">
+        {/* <p className="p-5 text-center text-gray-600 dark:text-gray-400 sm:px-20 lg:px-40">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cum ipsam
           porro eveniet, quidem fugiat assumenda harum dolorem exercitationem
           quam?
-        </p>
+        </p> */}
       </div>
 
       <div className="flex flex-wrap items-center justify-center py-4 md:py-8">
@@ -78,6 +68,8 @@ export default function GalleryTagFb() {
           Kopfhörer
         </button>
       </div>
+      {/* grid grid-cols-2 gap-4 md:grid-cols-3 */}
+      {/* flex flex-wrap justify-center items-center */}
       <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
         {imageList
           .filter((image) =>
@@ -85,13 +77,13 @@ export default function GalleryTagFb() {
           )
           .map((image) => {
             return (
-              <div key={image.id} className="rounded-lg shadow-lg">
+              <div key={image.id} className="rounded-lg">
                 <Image
-                  className="h-auto max-w-full rounded-lg"
+                  className="rounded-lg shadow-xl"
                   src={image.src}
                   alt={image.alt}
-                  width={400}
-                  height={400}
+                  width={300}
+                  height={300}
                 />
               </div>
             );

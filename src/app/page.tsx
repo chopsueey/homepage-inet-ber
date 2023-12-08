@@ -8,6 +8,7 @@ import Equipment from "./components/Home/Equipment";
 import NavbarTwo from "./components/Navbar/NavbarTwo";
 import SectionWrapper from "./components/SectionWrapper";
 import FooterFb from "./components/flowbite-react/FooterFb";
+import FooterFbWidescreen from "./components/flowbite-react/FooterFbWidescreen";
 
 export default function Home() {
   return (
@@ -33,7 +34,7 @@ export default function Home() {
         {/* <section className="min-h-screen p-4">
         <GamingHardware />
       </section> */}
-        <FooterFb />
+        <FooterFbWidescreen />
       </SectionWrapper>
 
       <main className="block lg:hidden">

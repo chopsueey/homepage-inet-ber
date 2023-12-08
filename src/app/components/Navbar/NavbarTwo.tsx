@@ -9,6 +9,8 @@ import { MdModeNight } from "react-icons/md";
 import { MdOutlineLightMode } from "react-icons/md";
 import GeneralStore from "@/app/context/GeneralContext";
 import { motion } from "framer-motion";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const NavbarTwo = () => {
   const [darkMode, setDarkMode] = GeneralStore();
@@ -32,6 +34,11 @@ const NavbarTwo = () => {
   };
 
   useEffect(() => {
+      AOS.init({
+        duration: 500,
+        once: false,
+        mirror: false,
+      });
     if (localStorage.theme === "light") setDarkMode(false);
 
     if (!localStorage.theme) {
@@ -52,7 +59,7 @@ const NavbarTwo = () => {
     //     type: "spring"
     //   },
     // }}>
-    <header className="w-full lg:max-w-screen-2x lg:container z-10 lg:mx-auto flex h-screen lg:items-end lg:justify-end">
+    <header className="w-full lg:max-w-screen-2x lg:container z-10 lg:mx-auto flex h-fit lg:items-end lg:justify-end">
       {/* bottom-[35%] right-[-100%] */}
       <motion.nav
         animate={{
@@ -62,29 +69,32 @@ const NavbarTwo = () => {
             type: "spring",
           },
         }}
-        className="bottom-[35vh] right-[-100vw] hidden h-fit w-full items-center justify-between p-2 px-6 lg:relative lg:flex lg:w-fit lg:flex-col lg:px-14"
+        className="right-[-100vw] hidden h-fit w-full items-center justify-between p-2 px-6 lg:relative lg:flex lg:w-fit lg:flex-col lg:px-14"
       >
         <div className="flex space-x-10 lg:flex-col">
           <Link href="/" className="text-4xl lg:text-6xl">
-            I<span style={{ color: "#00319b" }}>NET</span>{" "}
+            I<span 
+            // style={{ color: "#00319b" }}
+            className="text-blue-600"
+            >NET</span>{" "}
             <span className="text-2xl">BERINGER</span>
           </Link>
           {/* tablet and widescreen */}
           <ul className="mt-10 hidden flex-col items-end space-y-8 text-lg text-gray-600 dark:text-gray-400 lg:flex">
             <li>
               <Link
-                className="link-effect relative hover:text-black dark:hover:dark:text-gray-400"
+                className="link-effect relative hover:text-black dark:hover:text-white duration-200"
                 href="#Webdev"
               >
                 Webentwicklung
               </Link>
             </li>
-            {/* <li className="hover:text-black dark:hover:text-white">
+            {/* <li className="hover:text-black dark:hover:text-white duration-200">
               <Link href="/contact">Server</Link>
             </li> */}
             <li>
               <Link
-                className="link-effect relative hover:text-black dark:hover:dark:text-gray-400"
+                className="link-effect relative hover:text-black dark:hover:text-white duration-200"
                 href="#CustomBots"
               >
                 Custom Bots
@@ -92,7 +102,7 @@ const NavbarTwo = () => {
             </li>
             <li>
               <Link
-                className="link-effect relative hover:text-black dark:hover:dark:text-gray-400"
+                className="link-effect relative hover:text-black dark:hover:text-white duration-200"
                 href="#Equipment"
               >
                 Equipment
@@ -100,7 +110,7 @@ const NavbarTwo = () => {
             </li>
             <li>
               <Link
-                className="link-effect relative hover:text-black dark:hover:dark:text-gray-400"
+                className="link-effect relative hover:text-black dark:hover:text-white duration-200"
                 href="#Community"
               >
                 Community
@@ -108,7 +118,7 @@ const NavbarTwo = () => {
             </li>
             <li>
               <Link
-                className="link-effect relative hover:text-black dark:hover:dark:text-gray-400"
+                className="link-effect relative hover:text-black dark:hover:text-white duration-200"
                 href="#"
               >
                 Über uns
@@ -122,11 +132,11 @@ const NavbarTwo = () => {
             onClick={toggleDarkMode}
           >
             {darkMode ? (
-              <span className="text-xl text-white dark:text-white/90 hover:dark:text-white">
+              <span className="text-xl text-white">
                 <MdOutlineLightMode />
               </span>
             ) : (
-              <span className="text-xl text-gray-700 hover:text-black">
+              <span className="text-xl text-black">
                 <MdModeNight />
               </span>
             )}
@@ -137,43 +147,46 @@ const NavbarTwo = () => {
       {/* mobile menu */}
       <nav className="flex h-fit w-full items-center justify-between p-2 px-6 lg:relative lg:hidden lg:w-fit lg:flex-col lg:px-14">
       <Link href="/" className="text-4xl lg:text-6xl">
-            I<span style={{ color: "#00319b" }}>NET</span>{" "}
+            I<span 
+            // style={{ color: "#00319b" }}
+            className="text-blue-600"
+            >NET</span>{" "}
             <span className="text-2xl">BERINGER</span>
           </Link>
         <ul
           className={`${
             styles.mobileMenu
-          } absolute -right-full top-[68px] h-screen w-full list-none justify-between p-8 text-gray-600 ease-in dark:text-gray-400 lg:hidden ${
+          } z-50  dark:bg-[#1d1d20] bg-white absolute -right-full top-[68px] h-screen w-full list-none justify-between p-8 text-gray-600 ease-in dark:text-gray-400 lg:hidden ${
             isOpen ? " right-0 flex lg:hidden" : "hidden"
           }`}
         >
           <div className="w-fit space-y-6">
-            <li className="hover:text-black dark:hover:text-white">
+            <li className="text-black dark:text-white">
               <Link href="#Webdev" onClick={() => setIsOpen(!isOpen)}>
                 Webentwicklung
               </Link>
             </li>
-            {/* <li className="hover:text-black dark:hover:text-white">
+            {/* <li className="hover:text-black dark:hover:text-white duration-200">
               <Link href="/contact" onClick={() => setIsOpen(!isOpen)}>
                 Server
               </Link>
             </li> */}
-            <li className="hover:text-black dark:hover:text-white">
+            <li className="text-black dark:text-white">
               <Link href="#CustomBots" onClick={() => setIsOpen(!isOpen)}>
                 Custom Bots
               </Link>
             </li>
-            <li className="hover:text-black dark:hover:text-white">
+            <li className="text-black dark:text-white">
               <Link href="#Equipment" onClick={() => setIsOpen(!isOpen)}>
                 Equipment
               </Link>
             </li>
-            <li className="hover:text-black dark:hover:text-white">
+            <li className="text-black dark:text-white">
               <Link href="#Community" onClick={() => setIsOpen(!isOpen)}>
                 Community
               </Link>
             </li>
-            <li className="hover:text-black dark:hover:text-white">
+            <li className="text-black dark:text-white">
               <Link href="#" onClick={() => setIsOpen(!isOpen)}>
                 Über uns
               </Link>
@@ -185,11 +198,11 @@ const NavbarTwo = () => {
               onClick={toggleDarkMode}
             >
               {darkMode ? (
-                <span className="text-xl text-white dark:text-white/90 hover:dark:text-white">
+                <span className="text-xl text-white">
                   <MdOutlineLightMode />
                 </span>
               ) : (
-                <span className="text-xl text-gray-700 hover:text-black">
+                <span className="text-xl text-black">
                   <MdModeNight />
                 </span>
               )}
