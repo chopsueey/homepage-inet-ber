@@ -32,12 +32,14 @@ export default function RootLayout({
                 } else {
                   document.documentElement.classList.remove('dark');
                 }
+                localStorage.setItem("reachedBottom", "false");
+                localStorage.setItem("reachedTop", "false");
               `,
           }}
         />
       </head>
       <GeneralContext>
-        <body className="overflow-x-hidden">
+        <body className="bg-blob overflow-x-hidden">
           {children}
           {/* <Footer /> */}
         </body>
