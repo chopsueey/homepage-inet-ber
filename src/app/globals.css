@@ -2,14 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* bg test */
 /* #f14251 */
 /* #1d1d20 */
 /* #1a1a1a */
+
+/* accent */
+/* #1c64f2 */
+
 :root {
-  --text-color: #1d1d20;
+  --text-color: #000;
   --text-color-dark: white;
   --bg-color: white;
-  --bg-color-dark: #1d1d20;
+  --bg-color-dark: #000;
 }
 
 body {

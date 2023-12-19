@@ -13,7 +13,7 @@ export default function Service() {
           ease: "easeInOut",
         },
       }}
-      className="container mx-auto max-w-screen-2xl"
+      className="container mx-auto max-w-screen-2xl dark:bg-neutral-950 rounded-3xl m-6"
     >
       <div className="flex flex-col items-center border-gray-300 p-4 text-center dark:border-gray-400/50">
         <p className="text-md p-10 text-gray-600 dark:text-gray-400">

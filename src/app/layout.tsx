@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import FooterFb from "./components/flowbite-react/FooterFb";
 import { GeneralContext } from "./context/GeneralContext";
-import NavbarTwo from "./components/Navbar/NavbarTwo";
+import NavbarTwo from "./components/Navbar/HeroSection";
 
 // const inter = Inter({ subsets: ["latin"], weight: "400" });
 
