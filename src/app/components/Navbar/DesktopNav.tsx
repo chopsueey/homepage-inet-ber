@@ -15,7 +15,6 @@ export const DesktopNav = () => {
         transition={{
           bounce: 0.6,
           type: "spring",
-          ease: "easeInOut",
         }}
         className="hidden h-fit items-center lg:flex lg:w-fit lg:flex-col"
       >
