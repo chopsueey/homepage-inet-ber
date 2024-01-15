@@ -42,7 +42,7 @@ const ModeToggle = () => {
   }, [darkMode]);
   return (
     <button
-            className="relative -right-2 lg:mt-4 w-fit rounded-full p-2 hover:bg-gray-300 dark:hover:bg-gray-600/50"
+            className="w-fit rounded-full p-2 hover:bg-gray-300 dark:hover:bg-gray-600/50 duration-200"
             onClick={toggleDarkMode}
           >
             {darkMode ? (

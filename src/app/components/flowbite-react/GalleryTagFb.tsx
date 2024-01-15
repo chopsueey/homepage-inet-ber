@@ -9,7 +9,7 @@ export default function GalleryTagFb() {
   const [category, setCategory] = useState("all");
 
   return (
-    <div className="flex flex-col items-center justify-center overflow-hidden">
+    <div className="flex flex-col items-center justify-center overflow-hidden py-10">
       <div>
         <h1 className="text-center text-4xl font-bold">
           Starte durch, mit unserem Equipment.
@@ -26,7 +26,7 @@ export default function GalleryTagFb() {
           data-aos="fade-left"
           data-aos-delay="100"
           type="button"
-          className="mb-3 mr-3 rounded-full border border-gray-400/50 px-5 py-2.5 text-center text-base font-medium hover:bg-black hover:text-white focus:bg-black focus:text-white focus:outline-none focus:ring-4 focus:ring-gray-400/50 dark:hover:bg-[#101010] dark:hover:text-white dark:focus:bg-[#101010] dark:focus:ring-gray-400/50"
+          className="mb-3 mr-3 rounded-full border border-gray-400/50 px-5 py-2.5 text-center text-base font-medium duration-200 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white focus:outline-none focus:ring-4 focus:ring-gray-200 dark:hover:bg-blue-600 dark:hover:text-white"
           onClick={() => setCategory("all")}
         >
           All categories
@@ -35,7 +35,7 @@ export default function GalleryTagFb() {
           data-aos="fade-left"
           data-aos-delay="200"
           type="button"
-          className="mb-3 mr-3 rounded-full border border-white px-5 py-2.5 text-center text-base font-medium text-gray-900 hover:border-gray-200 hover:bg-black hover:text-white focus:bg-black focus:text-white focus:outline-none focus:ring-4 focus:ring-gray-400/50 dark:border-gray-800 dark:text-white dark:hover:border-gray-400/50 dark:focus:bg-[#101010] dark:focus:ring-gray-400/50"
+          className="mb-3 mr-3 rounded-full border border-gray-400/50 px-5 py-2.5 text-center text-base font-medium duration-200 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white focus:outline-none focus:ring-4 focus:ring-gray-200 dark:hover:bg-blue-600 dark:hover:text-white"
           onClick={() => setCategory("streaming")}
         >
           Streaming
@@ -44,7 +44,7 @@ export default function GalleryTagFb() {
           data-aos="fade-left"
           data-aos-delay="300"
           type="button"
-          className="mb-3 mr-3 rounded-full border border-white px-5 py-2.5 text-center text-base font-medium text-gray-800 hover:border-gray-200 hover:bg-black hover:text-white focus:bg-black focus:text-white focus:outline-none focus:ring-4 focus:ring-gray-400/50 dark:border-gray-800 dark:text-white dark:hover:border-gray-400/50 dark:focus:bg-[#101010] dark:focus:ring-gray-400/50"
+          className="mb-3 mr-3 rounded-full border border-gray-400/50 px-5 py-2.5 text-center text-base font-medium duration-200 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white focus:outline-none focus:ring-4 focus:ring-gray-200 dark:hover:bg-blue-600 dark:hover:text-white"
           onClick={() => setCategory("gaming")}
         >
           Gaming
@@ -53,7 +53,7 @@ export default function GalleryTagFb() {
           data-aos="fade-left"
           data-aos-delay="400"
           type="button"
-          className="mb-3 mr-3 rounded-full border border-white px-5 py-2.5 text-center text-base font-medium text-gray-800 hover:border-gray-200 hover:bg-black hover:text-white focus:bg-black focus:text-white focus:outline-none focus:ring-4 focus:ring-gray-400/50 dark:border-gray-800 dark:text-white dark:hover:border-gray-400/50 dark:focus:bg-[#101010] dark:focus:ring-gray-400/50"
+          className="mb-3 mr-3 rounded-full border border-gray-400/50 px-5 py-2.5 text-center text-base font-medium duration-200 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white focus:outline-none focus:ring-4 focus:ring-gray-200 dark:hover:bg-blue-600 dark:hover:text-white"
           onClick={() => setCategory("webcam")}
         >
           Webcams
@@ -62,7 +62,7 @@ export default function GalleryTagFb() {
           data-aos="fade-left"
           data-aos-delay="500"
           type="button"
-          className="mb-3 mr-3 rounded-full border border-white px-5 py-2.5 text-center text-base font-medium text-gray-800 hover:border-gray-200 hover:bg-black hover:text-white focus:bg-black focus:text-white focus:outline-none focus:ring-4 focus:ring-gray-400/50 dark:border-gray-800 dark:text-white dark:hover:border-gray-400/50 dark:focus:bg-[#101010] dark:focus:ring-gray-400/50"
+          className="mb-3 mr-3 rounded-full border border-gray-400/50 px-5 py-2.5 text-center text-base font-medium duration-200 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white focus:outline-none focus:ring-4 focus:ring-gray-200 dark:hover:bg-blue-600 dark:hover:text-white"
           onClick={() => setCategory("headphones")}
         >
           Kopfhörer

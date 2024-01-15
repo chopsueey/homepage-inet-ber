@@ -1,14 +1,12 @@
 "use client";
 
-import { useEffect } from "react";
-
 import Robot from "../../animation/Robot.js";
 
 export default function CustomBots() {
 
   return (
-    <section className="max-w-screen-2xl container mx-auto p-4">
-      <div className="mx-auto mb-6 mt-8 flex max-w-screen-lg flex-col items-center justify-center overflow-hidden">
+    <section className="max-w-screen-2xl container mx-auto p-4 py-10 dark:bg-neutral-900/50 shadow-lg rounded-3xl my-8">
+      <div className="mx-auto flex max-w-screen-lg flex-col items-center justify-center overflow-hidden">
         <div>
           <h1
             style={{ wordBreak: "break-word" }}
