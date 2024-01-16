@@ -1,9 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter, Montserrat } from "next/font/google";
-import Navbar from "./components/Navbar/Navbar";
-import Footer from "./components/Footer/Footer";
-import FooterFb from "./components/flowbite-react/OldFooterFb";
 import { GeneralContext } from "./context/GeneralContext";
 
 // const inter = Inter({ subsets: ["latin"], weight: "400" });
@@ -20,6 +17,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+
   return (
     <html lang="en" className={`${montserrat.className} dark`}>
       <head>
@@ -38,7 +36,7 @@ export default function RootLayout({
         />
       </head>
       <GeneralContext>
-        <body className="bg-blob overflow-x-hidden">
+        <body className="bg-blob overflow-x-hidden relative">
           {children}
           {/* <Footer /> */}
         </body>

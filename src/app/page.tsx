@@ -10,7 +10,7 @@ import { DesktopNav } from "./components/Navbar/DesktopNav";
 
 export default function Home() {
   return (
-    <main className="lg:container lg:relative lg:mx-auto lg:min-h-screen lg:max-w-screen-xl">
+    <main className="lg:container lg:mx-auto lg:min-h-screen lg:max-w-screen-xl relative flex justify-center flex-col items-center space-y-6">
       <DesktopNav />
       <MobileMenu />
       <Service />

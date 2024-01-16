@@ -1,6 +1,5 @@
 "use client";
 
-import { useRef } from "react";
 import FeaturesFb from "../flowbite-react/FeaturesFb";
 import { motion, useInView } from "framer-motion";
 
@@ -17,11 +16,11 @@ export default function Service() {
       // initial="hidden"
       // animate={isInView ? "visible" : "hidden"}
       // variants={animationVariants}
-      className="container m-6 mx-auto max-w-screen-2xl rounded-3xl shadow-lg dark:bg-neutral-900/50"
+      className="container mx-auto max-w-screen-2xl rounded-3xl shadow-lg dark:bg-neutral-900/30"
       // ref={ref}
     >
       <div className="flex flex-col items-center border-gray-300 p-4 text-center dark:border-gray-400/50">
-        <p className="p-10 text-lg font-bold text-blue-500">
+        <p className="p-10 text-lg font-bold text-blue-600">
           Webentwicklung. Gameserver. Custom&nbsp;Bots.
         </p>
         <h1 className="mb-16 mt-2 text-5xl font-bold lg:text-8xl">

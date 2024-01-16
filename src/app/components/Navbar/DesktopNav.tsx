@@ -1,5 +1,7 @@
 "use client";
 
+import { BsGithub, BsDiscord, BsFacebook } from "react-icons/bs";
+import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 import { AnimatePresence, motion, useInView } from "framer-motion";
 import ModeToggle from "./ModeToggle";
@@ -24,85 +26,132 @@ export const DesktopNav = () => {
   }
 
   return (
-    <header
-      className={
-        "lg:max-w-screen-2x z-10 w-full lg:container lg:mx-auto lg:flex lg:h-screen lg:items-center lg:justify-center"
-      }
-    >
-      <motion.nav
-        initial={{ x: "60vw" }}
-        animate={{
-          x: "15vw",
-        }}
-        transition={{
-          bounce: 0.6,
-          type: "spring",
-        }}
-        className="hidden h-fit items-center lg:flex lg:w-fit lg:flex-col"
-        ref={ref}
+    <>
+      <header
+        className={
+          "relative z-10 w-full justify-between lg:container lg:mx-auto lg:flex lg:h-screen lg:max-w-screen-2xl lg:items-center"
+        }
       >
-        <div className="flex space-x-10 lg:flex-col">
-          <Link href="/" className="text-4xl lg:text-6xl">
-            I
-            <span
-              // style={{ color: "#00319b" }}
-              className="text-blue-600"
+        {/* <motion.div
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{
+            delay: 0.5,
+            bounce: 0.6,
+            type: "spring",
+          }}
+          className="container2 hidden lg:block"
+        ></motion.div> */}
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{
+            delay: 0.8,
+            bounce: 0.6,
+            type: "spring",
+          }}
+          className="left-[10%] relative hidden h-fit flex-col space-y-5 dark:text-neutral-500 sm:mt-0 sm:justify-center lg:flex"
+        >
+          <a
+            href="#"
+            className="text-[#0866fb] duration-200 hover:scale-125 dark:text-neutral-500 dark:hover:text-[#0866fb]"
+          >
+            <BsFacebook size={28} />
+          </a>
+          <a
+            href="#"
+            className="text-[#5865f2] duration-200 hover:scale-125 dark:text-neutral-500 dark:hover:text-[#5865f2]"
+          >
+            <BsDiscord size={28} />
+          </a>
+          <a
+            href="#"
+            className="duration-200 hover:scale-125 hover:text-black dark:hover:text-white"
+          >
+            <FaXTwitter size={28} />
+          </a>
+          <a
+            href="#"
+            className="duration-200 hover:scale-125 hover:text-black dark:hover:text-white"
+          >
+            <BsGithub size={28} />
+          </a>
+        </motion.div>
+        <motion.nav
+          initial={{ x: "60vw" }}
+          animate={{
+            x: "0",
+          }}
+          transition={{
+            bounce: 0.6,
+            type: "spring",
+          }}
+          className="container1 relative hidden h-fit items-center lg:flex lg:w-fit lg:flex-col"
+          ref={ref}
+        >
+          <div className="flex space-x-10 lg:flex-col">
+            <Link
+              href="/"
+              className="text-4xl duration-200 hover:scale-110 lg:text-6xl"
             >
-              NET
-            </span>{" "}
-            <span className="text-2xl">BERINGER</span>
-          </Link>
-          {/* tablet and widescreen */}
-          <ul className="mt-10 hidden flex-col items-end space-y-8 text-lg text-gray-600 dark:text-gray-400 lg:flex">
-            <li>
-              <Link
-                className="link-effect relative duration-200 hover:text-black dark:hover:text-white"
-                href="#Webdev"
+              I
+              <span
+                // style={{ color: "#00319b" }}
+                className="text-blue-600"
               >
-                Webentwicklung
-              </Link>
-            </li>
-            {/* <li className="hover:text-black dark:hover:text-white duration-200">
-              <Link href="/contact">Server</Link>
-            </li> */}
-            <li>
-              <Link
-                className="link-effect relative duration-200 hover:text-black dark:hover:text-white"
-                href="#CustomBots"
-              >
-                Custom Bots
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="link-effect relative duration-200 hover:text-black dark:hover:text-white"
-                href="#Equipment"
-              >
-                Equipment
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="link-effect relative duration-200 hover:text-black dark:hover:text-white"
-                href="#Community"
-              >
-                Community
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="link-effect relative duration-200 hover:text-black dark:hover:text-white"
-                href="#"
-              >
-                Über uns
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div className="relative -right-2 hidden w-full justify-end lg:mt-4 lg:flex">
-          <ModeToggle />
-        </div>
-      </motion.nav>
+                NET
+              </span>{" "}
+              <span className="text-2xl">BERINGER</span>
+            </Link>
+            {/* tablet and widescreen */}
+            <ul className="mt-10 hidden flex-col items-end space-y-8 text-lg text-gray-600 dark:text-gray-500 lg:flex">
+              <li>
+                <Link
+                  className="link-effect relative duration-200 hover:font-bold hover:text-black dark:hover:text-white"
+                  href="#Webdev"
+                >
+                  Webentwicklung
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="link-effect relative duration-200 hover:font-bold hover:text-black dark:hover:text-white"
+                  href="#CustomBots"
+                >
+                  Custom Bots
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="link-effect relative duration-200 hover:font-bold hover:text-black dark:hover:text-white"
+                  href="#Equipment"
+                >
+                  Equipment
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="link-effect relative duration-200 hover:font-bold hover:text-black dark:hover:text-white"
+                  href="#Community"
+                >
+                  Community
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="link-effect relative duration-200 hover:font-bold hover:text-black dark:hover:text-white"
+                  href="#"
+                >
+                  Über uns
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="relative -right-2 hidden w-full justify-end lg:mt-4 lg:flex">
+            <ModeToggle />
+          </div>
+        </motion.nav>
+      </header>
       <AnimatePresence>
         {!isInView && (
           <motion.nav
@@ -125,7 +174,7 @@ export const DesktopNav = () => {
             dragTransition={{ bounceStiffness: 600, bounceDamping: 20 }}
             dragElastic={0.5}
             whileTap={{ cursor: "grabbing" }}
-            className="fixed border border-gray-200 dark:border-neutral-800 top-0 z-50 mt-4 hidden h-fit cursor-grab items-center rounded-full bg-white p-2 px-4 pl-5 shadow-lg dark:bg-neutral-900 lg:flex lg:w-fit"
+            className="fixed -top-3 z-50 hidden h-fit items-center rounded-full border border-gray-200 bg-white p-2 px-4 pl-5 shadow-lg dark:border-neutral-800 dark:bg-neutral-900 lg:flex lg:w-fit"
           >
             <div className="flex space-x-4">
               <Link
@@ -145,27 +194,27 @@ export const DesktopNav = () => {
               </Link>
               {/* tablet and widescreen */}
               <ul className="flex items-center space-x-4">
-                <li className="rounded-lg hover:bg-gray-100 p-1 duration-200 hover:text-white hover:scale-125 dark:hover:bg-neutral-800/50">
+                <li className="rounded-lg p-1 duration-200 hover:scale-125 hover:bg-gray-100 hover:text-white dark:hover:bg-neutral-800/50">
                   <Link href="#Webdev">
                     <WebdevSvg />
                   </Link>
                 </li>
-                <li className="rounded-lg hover:bg-gray-100 p-1 duration-200 hover:text-white hover:scale-125 dark:hover:bg-neutral-800/50">
+                <li className="rounded-lg p-1 duration-200 hover:scale-125 hover:bg-gray-100 hover:text-white dark:hover:bg-neutral-800/50">
                   <Link href="#">
                     <DiscordSvg />
                   </Link>
                 </li>
-                <li className="rounded-lg hover:bg-gray-100 p-1 duration-200 hover:text-white hover:scale-125 dark:hover:bg-neutral-800/50">
+                <li className="rounded-lg p-1 duration-200 hover:scale-125 hover:bg-gray-100 hover:text-white dark:hover:bg-neutral-800/50">
                   <Link href="#Webdev">
                     <GamingSvg />
                   </Link>
                 </li>
-                <li className="rounded-lg hover:bg-gray-100 p-1 duration-200 hover:text-white hover:scale-125 dark:hover:bg-neutral-800/50">
+                <li className="rounded-lg p-1 duration-200 hover:scale-125 hover:bg-gray-100 hover:text-white dark:hover:bg-neutral-800/50">
                   <Link href="#Webdev">
                     <CommunitySvg />
                   </Link>
                 </li>
-                <li className="rounded-lg hover:bg-gray-100 p-1 duration-200 hover:text-white hover:scale-125 dark:hover:bg-neutral-800/50">
+                <li className="rounded-lg p-1 duration-200 hover:scale-125 hover:bg-gray-100 hover:text-white dark:hover:bg-neutral-800/50">
                   <Link href="#Webdev">
                     <Image
                       width={24}
@@ -181,6 +230,6 @@ export const DesktopNav = () => {
           </motion.nav>
         )}
       </AnimatePresence>
-    </header>
+    </>
   );
 };

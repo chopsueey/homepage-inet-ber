@@ -14,6 +14,11 @@ const config: Config = {
       //   "gradient-conic":
       //     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       // },
+      backgroundImage: {
+        "gradient-blue": "linear-gradient(rgb(255, 255, 255) 0%, rgb(28, 100, 242, 0.4) 100%)",
+        "gradient-blue-dark": "linear-gradient(rgb(0, 0, 0) 0%, rgba(28, 100, 242, 0.4) 100%)",
+        // Add more custom background gradients as needed
+      },
       colors: {
         peachYellow: "#F7DBA7",
       },

@@ -5,9 +5,14 @@ import { FaXTwitter } from "react-icons/fa6";
 
 export default function FooterFb() {
   return (
-    <footer className="container mx-auto flex max-w-screen-2xl items-center justify-center">
-      <div className="w-full p-4 py-6 lg:py-8">
-        <div className="md:flex md:justify-between">
+    // container mx-auto max-w-screen-2xl
+    <footer className="bg-gradient-blue dark:bg-gradient-blue-dark w-[100vw] min-h-[35vh] h-[35vh]">
+      {/* dark:bg-neutral-900/30 shadow-lg rounded-3xl */}
+      <div className="container mx-auto max-w-screen-xl h-full">
+
+      
+      <div className="w-full h-full flex flex-col justify-around px-8 xl:px-4">
+        <div className="md:flex md:justify-between mt-10">
           <div className="mb-6 md:mb-0">
             <a href="#" className="flex items-center">
               {/* <img src="https://flowbite.com/docs/images/logo.svg" className="h-8 mr-3" alt="FlowBite Logo" /> */}
@@ -70,7 +75,7 @@ export default function FooterFb() {
             </div>
           </div>
         </div>
-        <hr className="my-6 border-gray-200 dark:border-gray-400/50 sm:mx-auto lg:my-8" />
+        {/* <hr className="my-6 border-gray-200 dark:border-gray-400/50 sm:mx-auto lg:my-8" /> */}
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 dark:text-gray-400 sm:text-center">
             © 2023{" "}
@@ -117,6 +122,7 @@ export default function FooterFb() {
           </div>
         </div>
       </div>
+      </div>    
     </footer>
   );
 }

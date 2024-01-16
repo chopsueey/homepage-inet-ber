@@ -54,7 +54,7 @@ const MobileMenu = () => {
             <Link href="#">Über uns</Link>
           </li>
         </div>
-        <div>
+        <div className="relative -top-1.5">
           <ModeToggle />
         </div>
       </ul>
