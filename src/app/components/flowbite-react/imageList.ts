@@ -42,12 +42,6 @@ const imageList: Image[] = [
     alt: "headphones",
     id: 6,
   },
-  {
-    src: "/images/gaming-headphones-2-bing-ai.jpg",
-    category: "headphones",
-    alt: "headphones",
-    id: 7,
-  },
 ];
 
 export default imageList;

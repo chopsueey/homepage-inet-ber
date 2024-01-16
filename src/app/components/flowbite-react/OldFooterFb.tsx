@@ -1,19 +1,18 @@
 "use client";
 
-import { Footer } from "flowbite-react";
-import {
-  BsGithub,
-  BsTwitter,
-  BsDiscord,
-  BsFacebook
-} from "react-icons/bs";
-import {FaXTwitter} from "react-icons/fa6";
+import { BsGithub, BsDiscord, BsFacebook } from "react-icons/bs";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function FooterFb() {
   return (
-    <footer className="container mx-auto max-w-screen-xl">
-      <div className="mx-auto w-full p-4 py-6 lg:py-8">
-        <div className="md:flex md:justify-between">
+    // container mx-auto max-w-screen-2xl
+    <footer className="bg-gradient-blue dark:bg-gradient-blue-dark w-[100vw] min-h-[35vh] h-[35vh]">
+      {/* dark:bg-neutral-900/30 shadow-lg rounded-3xl */}
+      <div className="container mx-auto max-w-screen-xl h-full">
+
+      
+      <div className="w-full h-full flex flex-col justify-around px-8 xl:px-4">
+        <div className="md:flex md:justify-between mt-10">
           <div className="mb-6 md:mb-0">
             <a href="#" className="flex items-center">
               {/* <img src="https://flowbite.com/docs/images/logo.svg" className="h-8 mr-3" alt="FlowBite Logo" /> */}
@@ -34,10 +33,7 @@ export default function FooterFb() {
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    className="hover:underline"
-                  >
+                  <a href="#" className="hover:underline">
                     Team
                   </a>
                 </li>
@@ -49,18 +45,12 @@ export default function FooterFb() {
               </h2>
               <ul className="font-medium text-gray-500 dark:text-gray-400">
                 <li className="mb-4">
-                  <a
-                    href="https://github.com"
-                    className="hover:underline "
-                  >
+                  <a href="https://github.com" className="hover:underline ">
                     Github
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    className="hover:underline"
-                  >
+                  <a href="#" className="hover:underline">
                     Discord
                   </a>
                 </li>
@@ -85,7 +75,7 @@ export default function FooterFb() {
             </div>
           </div>
         </div>
-        <hr className="my-6 border-gray-200 dark:border-gray-400/50 sm:mx-auto lg:my-8" />
+        {/* <hr className="my-6 border-gray-200 dark:border-gray-400/50 sm:mx-auto lg:my-8" /> */}
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 dark:text-gray-400 sm:text-center">
             © 2023{" "}
@@ -97,30 +87,30 @@ export default function FooterFb() {
           <div className="mt-4 flex space-x-5 sm:mt-0 sm:justify-center">
             <a
               href="#"
-              className="text-gray-500 hover:text-[#0866fb] dark:hover:text-[#0866fb]"
+              className="text-[#0866fb]"
             >
-              <BsFacebook/>
+              <BsFacebook />
               <span className="sr-only">Facebook page</span>
             </a>
             <a
               href="#"
-              className="text-gray-500 hover:text-[#5865f2] dark:hover:text-[#5865f2]"
+              className="text-[#5865f2]"
             >
-              <BsDiscord/>
+              <BsDiscord />
               <span className="sr-only">Discord community</span>
             </a>
             <a
               href="#"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              className="text-black dark:text-white"
             >
               <FaXTwitter />
               <span className="sr-only">Twitter page</span>
             </a>
             <a
               href="#"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              className="text-black dark:text-white"
             >
-             <BsGithub/>
+              <BsGithub />
               <span className="sr-only">GitHub account</span>
             </a>
             {/* <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
@@ -132,6 +122,7 @@ export default function FooterFb() {
           </div>
         </div>
       </div>
+      </div>    
     </footer>
   );
 }

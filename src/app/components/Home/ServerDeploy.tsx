@@ -4,25 +4,15 @@ import Image from "next/image";
 import img1 from "public/images/server-deployment-3-bing-ai.png";
 import img2 from "public/images/server-deployment-3-light-bing-ai.png";
 
-import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
 import GeneralStore from "@/app/context/GeneralContext";
 
 export default function ServerDeploy() {
   const [darkMode, setDarkMode] = GeneralStore();
 
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: false,
-      mirror: false,
-    });
-  }, []);
-
   return (
-    <>
-      <div className="flex flex-col items-center overflow-x-hidden px-5 py-10 sm:px-20 lg:flex-row lg:justify-between lg:px-28">
+    <section className="container mx-auto max-w-screen-2xl p-4 py-10 dark:bg-neutral-900/30 shadow-lg rounded-3xl">
+      <div className="flex flex-col items-center overflow-x-hidden px-4 py-10 lg:flex-row lg:justify-between lg:px-32">
         <div className="w-fit" data-aos="fade-left" data-aos-delay="100">
           <Image
             className="h-auto max-w-full rounded-2xl"
@@ -32,10 +22,7 @@ export default function ServerDeploy() {
             height={400}
           />
         </div>
-        <div
-          className="mb-6 mt-8 flex flex-col justify-start"
-          
-        >
+        <div className="mb-6 mt-8 flex flex-col justify-start">
           <h1
             className="text-center text-4xl font-bold"
             data-aos="fade-right"
@@ -46,14 +33,14 @@ export default function ServerDeploy() {
           <h1
             className="relative text-center text-4xl font-bold lg:left-16"
             data-aos="fade-left"
-            data-aos-delay="1000"
+            data-aos-delay="500"
           >
             Kein Problem.
           </h1>
         </div>
       </div>
       <div
-        className="px-5 text-gray-600 dark:text-gray-400 sm:px-20 lg:px-40 text-center"
+        className="px-5 text-center text-gray-600 dark:text-gray-400 mx-auto prose"
         data-aos="fade-up"
         data-aos-delay="200"
       >
@@ -70,6 +57,6 @@ export default function ServerDeploy() {
           error magni.
         </p>
       </div>
-    </>
+    </section>
   );
 }

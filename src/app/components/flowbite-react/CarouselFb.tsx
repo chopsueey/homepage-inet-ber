@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function CarouselFb() {
   return (
-    <Carousel className="h-96 max-w-3xl dark:text-red">
+    <Carousel>
       <Image
         src="/images/sectorlink-com-webdevelopment.jpg"
         alt="webdev technology"
