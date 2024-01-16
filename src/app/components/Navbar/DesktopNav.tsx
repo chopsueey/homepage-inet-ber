@@ -29,7 +29,7 @@ export const DesktopNav = () => {
     <>
       <header
         className={
-          "relative z-10 w-full justify-between lg:container lg:mx-auto lg:flex lg:h-screen lg:max-w-screen-2xl lg:items-center"
+          "hidden relative z-10 w-full justify-between lg:container lg:mx-auto lg:flex lg:h-screen lg:max-w-screen-2xl lg:items-center"
         }
       >
         {/* <motion.div

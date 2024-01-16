@@ -6,14 +6,14 @@ import { FaXTwitter } from "react-icons/fa6";
 export default function FooterFb() {
   return (
     // container mx-auto max-w-screen-2xl
-    <footer className="bg-gradient-blue dark:bg-gradient-blue-dark w-[100vw] min-h-[35vh] h-[35vh]">
+    <footer className="bg-gradient-blue dark:bg-gradient-blue-dark w-[100vw] min-h-[35vh] sm:h-[35vh]">
       {/* dark:bg-neutral-900/30 shadow-lg rounded-3xl */}
       <div className="container mx-auto max-w-screen-xl h-full">
 
       
       <div className="w-full h-full flex flex-col justify-around px-8 xl:px-4">
-        <div className="md:flex md:justify-between mt-10">
-          <div className="mb-6 md:mb-0">
+        <div className="md:flex md:justify-between mt-10 py-4 sm:py-0">
+          <div className="mb-10 md:mb-0">
             <a href="#" className="flex items-center">
               {/* <img src="https://flowbite.com/docs/images/logo.svg" className="h-8 mr-3" alt="FlowBite Logo" /> */}
               <span className="self-center whitespace-nowrap text-2xl dark:text-white">
@@ -76,7 +76,7 @@ export default function FooterFb() {
           </div>
         </div>
         {/* <hr className="my-6 border-gray-200 dark:border-gray-400/50 sm:mx-auto lg:my-8" /> */}
-        <div className="sm:flex sm:items-center sm:justify-between">
+        <div className="sm:flex sm:items-center sm:justify-between py-4 sm:py-0">
           <span className="text-sm text-gray-500 dark:text-gray-400 sm:text-center">
             © 2023{" "}
             <a href="#" className="hover:underline">
