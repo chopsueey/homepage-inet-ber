@@ -13,10 +13,11 @@ export default function Service() {
   // };
   return (
     <motion.section
+    id="Service"
       // initial="hidden"
       // animate={isInView ? "visible" : "hidden"}
       // variants={animationVariants}
-      className="container mx-auto max-w-screen-2xl rounded-3xl shadow-lg dark:bg-neutral-900/30"
+      className="container mx-auto scroll-mt-20 max-w-screen-2xl rounded-3xl shadow-lg dark:bg-neutral-900/30"
       // ref={ref}
     >
       <div className="flex flex-col items-center border-gray-300 p-4 text-center dark:border-gray-400/50">

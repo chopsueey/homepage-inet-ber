@@ -5,8 +5,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 import { AnimatePresence, motion, useInView } from "framer-motion";
 import ModeToggle from "./ModeToggle";
-import { useEffect, useRef } from "react";
-import clsx from "clsx";
+import { useRef } from "react";
 import {
   CommunitySvg,
   DiscordSvg,
@@ -14,12 +13,16 @@ import {
   WebdevSvg,
 } from "../Svgs/FeaturesFbSvgs";
 import Image from "next/image";
+import clsx from "clsx";
+import ButtonWithGradient from "../Buttons/ButtonCta";
+import ButtonCta from "../Buttons/ButtonCta";
 
 export const DesktopNav = () => {
   const ref = useRef(null);
   const isInView = useInView(ref);
   let right = 0;
   let left = 0;
+
   if (typeof window !== "undefined") {
     right = window.innerWidth / 2 - 496 / 2;
     left = -window.innerWidth / 2 + 496 / 2;
@@ -29,9 +32,35 @@ export const DesktopNav = () => {
     <>
       <header
         className={
-          "hidden relative z-10 w-full justify-between lg:container lg:mx-auto lg:flex lg:h-screen lg:max-w-screen-2xl lg:items-center"
+          "relative z-10 hidden w-full justify-end lg:container lg:mx-auto lg:flex lg:h-screen lg:max-w-screen-2xl lg:items-center dark:before:bg-none"
         }
       >
+        {/* top-[46%] -right-[80%] */}
+        <motion.div
+          className="absolute left-56 top-[51%] -translate-x-1/2 -translate-y-1/2"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+        >
+          <Image
+            src="/images/image-from-rawpixel-id-3312731-png.png"
+            alt="Picture of the author"
+            width={2000}
+            height={2000}
+          />
+        </motion.div>
+        <h1 className="absolute left-16 text-8xl font-extrabold">
+          Hello <br />
+          And
+          <br /> <span className="">Welcome.</span>{" "}
+        </h1>
+
+        {/* <Image
+                  className="dark:blur-[1px] absolute top-1/2 right-1/2 -translate-x-1/2 -translate-y-1/2"
+                  src="/images/image-from-rawpixel-id-3312731-png.png"
+                  alt="Picture of the author"
+                  width={200}
+                  height={200}
+                /> */}
         {/* <motion.div
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
@@ -50,43 +79,46 @@ export const DesktopNav = () => {
             bounce: 0.6,
             type: "spring",
           }}
-          className="left-[10%] relative hidden h-fit flex-col space-y-5 dark:text-neutral-500 sm:mt-0 sm:justify-center lg:flex"
+          // lg:-right-[81%] xl:-right-[84.5%] 2xl:-right-[90%]
+          className="absolute right-[3%] top-10 hidden h-fit flex-row space-x-4 sm:mt-0 sm:justify-center lg:flex 2xl:-right-[8.5%]"
         >
           <a
             href="#"
-            className="text-[#0866fb] duration-200 hover:scale-125 dark:text-neutral-500 dark:hover:text-[#0866fb]"
+            className="text-[#0866fb] duration-200 hover:scale-125"
           >
-            <BsFacebook size={28} />
+            <BsFacebook size={20} />
           </a>
           <a
             href="#"
-            className="text-[#5865f2] duration-200 hover:scale-125 dark:text-neutral-500 dark:hover:text-[#5865f2]"
+            className="text-[#5865f2] duration-200 hover:scale-125"
           >
-            <BsDiscord size={28} />
+            <BsDiscord size={20} />
           </a>
           <a
             href="#"
-            className="duration-200 hover:scale-125 hover:text-black dark:hover:text-white"
+            className="duration-200 hover:scale-125"
           >
-            <FaXTwitter size={28} />
+            <FaXTwitter size={20} />
           </a>
           <a
             href="#"
-            className="duration-200 hover:scale-125 hover:text-black dark:hover:text-white"
+            className="duration-200 hover:scale-125"
           >
-            <BsGithub size={28} />
+            <BsGithub size={20} />
           </a>
         </motion.div>
         <motion.nav
-          initial={{ x: "60vw" }}
-          animate={{
-            x: "0",
-          }}
+          // initial={{ x: "60vw" }}
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          // animate={{
+          //   x: "0",
+          // }}
           transition={{
             bounce: 0.6,
             type: "spring",
           }}
-          className="container1 relative hidden h-fit items-center lg:flex lg:w-fit lg:flex-col"
+          className="relative right-10 top-0 hidden h-fit items-center lg:flex lg:w-fit lg:flex-col 2xl:-right-36 2xl:mr-8"
           ref={ref}
         >
           <div className="flex space-x-10 lg:flex-col">
@@ -151,6 +183,7 @@ export const DesktopNav = () => {
             <ModeToggle />
           </div>
         </motion.nav>
+        <ButtonCta />
       </header>
       <AnimatePresence>
         {!isInView && (
@@ -174,7 +207,7 @@ export const DesktopNav = () => {
             dragTransition={{ bounceStiffness: 600, bounceDamping: 20 }}
             dragElastic={0.5}
             whileTap={{ cursor: "grabbing" }}
-            className="fixed -top-3 z-50 hidden h-fit items-center rounded-full border border-gray-200 bg-white p-2 px-4 pl-5 shadow-lg dark:border-neutral-800 dark:bg-neutral-900 lg:flex lg:w-fit"
+            className="fixed -top-3 z-50 hidden h-fit items-center rounded-full border border-gray-200 bg-white p-2 px-4 pl-5 shadow-lg dark:border-neutral-800 dark:bg-black lg:flex lg:w-fit"
           >
             <div className="flex space-x-4">
               <Link
